@@ -11,7 +11,7 @@
 }
 .navbar img{
   width: 140px;
-  padding-left:100px;
+  padding-left:20px;
 }
 .heading{
   width: 100%;
@@ -67,6 +67,7 @@
 .form label input{
   height: 40px;
   border-radius: 10px;
+  padding-left: 10px;
 
 }
 .form-body button{
@@ -77,6 +78,12 @@
   font-weight: bolder;
   border-radius: 10px;
 
+}
+.loader{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .map{
   width: 100%;
