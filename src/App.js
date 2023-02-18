@@ -32,7 +32,7 @@ function Distance() {
 
       </div>
       <div className='heading'>
-        <h1>Find The Distance Between Two Places.</h1>
+        <h1>Discover the Distance Between Two Locations.</h1>
         <p>This App Will Help You Calculate Your Travelling Distances.</p>
       </div>
       <div className='main'>
