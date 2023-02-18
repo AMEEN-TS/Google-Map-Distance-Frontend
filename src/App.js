@@ -5,6 +5,7 @@ import './App.css';
 import axios from 'axios';
 import { BaseUrl } from "./API/BaseUrl";
 import imge1 from "./image/WF-group-logo-03-1-400x171.png";
+
 import { TbCircleDot } from "react-icons/tb";
 import { BsFillGeoAltFill } from "react-icons/bs";
 
@@ -25,7 +26,7 @@ function Distance() {
   };
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%", }}>
       <div className='navbar'>
         <img src={imge1} ></img>
 
@@ -52,11 +53,13 @@ function Distance() {
 
         </form>
       </div>
+
+
       {distance && (
         <div className='map' >
           <h1>Distance: {distance} </h1>
           <iframe
-            width="60%"
+            width="90%"
             height="450"
             frameBorder="0"
             src={map}

@@ -54,6 +54,7 @@
 .form label{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 .form label span {
@@ -92,12 +93,18 @@
     justify-content: center;
     align-items:center;
     flex-direction: column;
+    padding-top: 10px;
   
   }
   .heading h1, p{
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .map iframe{
    width:100%
+  }
+  .form-body button{
+    width: 150px;
+    margin-left: 50px;
   }
 }
