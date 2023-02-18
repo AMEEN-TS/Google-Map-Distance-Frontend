@@ -30,7 +30,7 @@ function Distance() {
   function loading(){
     setTimeout(()=>{
       setSpinner(false)
-    },1000)
+    },4000)
   }
 
 
