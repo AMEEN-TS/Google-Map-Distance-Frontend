@@ -8,7 +8,6 @@ import imge1 from "./image/WF-group-logo-03-1-400x171.png";
 import { FallingLines } from 'react-loader-spinner'
 import { TbCircleDot } from "react-icons/tb";
 import { BsFillGeoAltFill } from "react-icons/bs";
-import Autocomplete from "react-google-autocomplete";
 
 
 function Distance() {
@@ -51,25 +50,11 @@ function Distance() {
             <label >
               <span> <TbCircleDot /></span>
 
-              <Autocomplete
-  apiKey={process.env.REACT_APP_MAP_KEY}
-
-  onPlaceSelected={(place) => {
-    setFrom(place.address_components[0].long_name
-        )
-  }}
-/>
+              <input type="text" placeholder='Origin' value={from} onChange={(event) => setFrom(event.target.value)} />
             </label>
             <label >
               <span><BsFillGeoAltFill /></span>
-              <Autocomplete
-  apiKey={process.env.REACT_APP_MAP_KEY}
-
-  onPlaceSelected={(place) => {
-    setTo(place.address_components[0].long_name
-        )
-  }}
-/>
+              <input type="text" placeholder='Destination' value={to} onChange={(event) => setTo(event.target.value)} />
             </label>
             <button type="submit">Go</button>
 
