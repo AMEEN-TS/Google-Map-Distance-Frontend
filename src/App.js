@@ -34,7 +34,7 @@ function Distance() {
     },3000)
   }
 
-console.log(process.env.REACT_APP_MAP_KEY,"fffff");
+
   return (
     <div style={{ width: "100%", }}>
       <div className='navbar'>
